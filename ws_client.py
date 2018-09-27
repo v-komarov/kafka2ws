@@ -1,5 +1,4 @@
 #!/bin/python3.6
-
 import asyncio
 import websockets
 import argparse
@@ -23,4 +22,3 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     asyncio.get_event_loop().run_until_complete(ResvEvt(args.ip,args.port))
-    

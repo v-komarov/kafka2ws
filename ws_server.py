@@ -1,5 +1,4 @@
 #!/bin/python3.6
-
 import asyncio
 import websockets
 import argparse
