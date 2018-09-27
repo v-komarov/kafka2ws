@@ -1,1 +1,2 @@
-# kafka2ws
+# Отправка сообщений в websocket
+
