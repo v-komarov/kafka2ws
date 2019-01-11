@@ -1,0 +1,14 @@
+[Unit]
+Description=Screen websocket
+After=network.target
+
+[Service]
+Type=forking
+User=root
+ExecStart=/usr/bin/screen -dmS ws /srv/compresszenoss/ws_server.sh
+ExecStop=/usr/bin/screen -S ws -X quit
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
